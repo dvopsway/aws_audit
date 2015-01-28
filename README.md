@@ -20,11 +20,11 @@ import aws_audit
 ```python
 session = aws_audit.CheckMfa()
 ```
-* Use variable to call methods from the package, available methods are
-    *get_users() - returns user list
-    *get_groups() - returns group list
-    *check_mfa_enabled(username) - return boolean - True if enabled or vice versa
-    *remove_all_groups(username) - remove all groups if MFA is not enable for a user 
+* Use variable to call methods from the package, available methods are:
+  * get_users() - returns user list
+  * get_groups() - returns group list
+  * check_mfa_enabled(username) - return boolean - True if enabled or vice versa
+  * remove_all_groups(username) - remove all groups if MFA is not enable for a user 
     
 ### Example usage
 
