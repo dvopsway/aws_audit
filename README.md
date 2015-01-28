@@ -3,8 +3,10 @@
 
 ###Introduction
 This projects aims to provide a library so that you can perform auditing for an aws account
-Current functionality:
+#####Current functionalities:
   * checking if mfa is enabled for users
+  * Pulling available users and groups
+  * removing groups for user that doesn't have mfa enabled (use case)
 
 ###Prerequistes
 
