@@ -1,8 +1,8 @@
 # aws_audit
 ##version : 0.1
 ###Updation history
-0.1 -> Project Launch
-0.1.1 -> Checking access_key functionality
+*0.1 -> Project Launch
+*0.1.1 -> Checking access_key functionality
 
 ###Introduction
 This projects aims to provide a library so that you can perform auditing for an aws account
