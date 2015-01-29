@@ -1,6 +1,12 @@
 import boto
 
-class CheckMfa():
+import json
+# quick code to print json output
+# json_data = json.dumps(json_output,indent=4)
+# print (json_data)
+
+
+class CheckIAM():
     all_users = []
     authorised_users = []
     unauthorised_users = []
@@ -21,6 +27,12 @@ class CheckMfa():
             self.all_groups.append(group['group_name'])
         return self.all_groups
 
+    # remove all groups for a user
+    def remove_all_groups(self,username):
+        self.get_groups(self)
+        for group in self.all_groups:
+            self.boto_ref.remove_user_from_group(group,username)
+
     # finding if MFA is enabled or not
     def check_mfa_enabled(self,username):
         mfa_status = self.boto_ref.get_all_mfa_devices(username)
@@ -29,8 +41,10 @@ class CheckMfa():
         else:
             return False
 
-    # remove all groups for a user
-    def remove_all_groups(self,username):
-        self.get_groups(self)
-        for group in self.all_groups:
-            self.boto_ref.remove_user_from_group(group,username)
+    # finding if MFA is enabled or not
+    def check_access_keys(self,username):
+        access_keys = self.boto_ref.get_all_access_keys(username)
+        if len(str(access_keys.list_access_keys_result.access_key_metadata)) > 2:
+            return True
+        else:
+            return False

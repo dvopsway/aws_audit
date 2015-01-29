@@ -1,1 +1,1 @@
-from aws_audit.check_mfa.check_mfa import CheckMfa
+from aws_audit.check_iam.check_iam import CheckIAM
