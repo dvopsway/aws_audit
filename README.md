@@ -29,8 +29,8 @@ This projects aims to provide a library so that you can perform auditing for an 
 ###Documentation
 
 * Check individual documentation
-  * [a Check_IAM](https://github.com/padmakarojha/aws_audit/blob/master/Documentation/Check_IAM.md)
-  * [a Check_EC2](https://github.com/padmakarojha/aws_audit/blob/master/Documentation/Check_EC2.md)
+  * [Check_IAM](https://github.com/padmakarojha/aws_audit/blob/master/Documentation/Check_IAM.md)
+  * [Check_EC2](https://github.com/padmakarojha/aws_audit/blob/master/Documentation/Check_EC2.md)
   
 
 
