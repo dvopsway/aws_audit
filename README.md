@@ -1,5 +1,5 @@
 # aws_audit
-##version : 0.1.1
+##version : 0.1.2
 ###Updation history
 * 0.1 -> Project Launch
 * 0.1.1 -> Checking access_keys available for users
